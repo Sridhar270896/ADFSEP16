@@ -1,0 +1,24 @@
+{
+	"name": "TR_SCH_SRC_RAW_DAILY_MASTERPIPELINE",
+	"properties": {
+		"annotations": [],
+		"runtimeState": "Started",
+		"pipelines": [
+			{
+				"pipelineReference": {
+					"referenceName": "PL_METADATA_FILTER",
+					"type": "PipelineReference"
+				}
+			}
+		],
+		"type": "ScheduleTrigger",
+		"typeProperties": {
+			"recurrence": {
+				"frequency": "Minute",
+				"interval": 30,
+				"startTime": "2026-09-16T16:30:00",
+				"timeZone": "India Standard Time"
+			}
+		}
+	}
+}

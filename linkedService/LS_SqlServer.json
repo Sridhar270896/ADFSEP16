@@ -1,0 +1,21 @@
+{
+	"name": "LS_SqlServer",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"server": "SRIDHAR\\SQLEXPRESS01",
+			"database": "sridhar0511",
+			"encrypt": "optional",
+			"trustServerCertificate": true,
+			"authenticationType": "Windows",
+			"userName": "SRIDHAR\\gudap",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJlYzJmYWU0ZS1jYWQ0LTRjOTQtOGZhMy01ZjE5MWUwYTVmOWQiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "SelfHostedIntegrationRuntime",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
