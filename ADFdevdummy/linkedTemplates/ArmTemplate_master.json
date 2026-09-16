@@ -1,0 +1,237 @@
+{
+	"$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"type": "string",
+			"metadata": "Data Factory name",
+			"defaultValue": "ADFdevdummy"
+		},
+		"DeletedLogs_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'DeletedLogs'"
+		},
+		"LS_ADLS_CSV_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'LS_ADLS_CSV'"
+		},
+		"LS_BinaryText_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'LS_BinaryText'"
+		},
+		"LS_DATA_CSV_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'LS_DATA_CSV'"
+		},
+		"LS_DATA_CSV1_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'LS_DATA_CSV1'"
+		},
+		"LS_GETMETADATA_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'LS_GETMETADATA'"
+		},
+		"LS_MultipleCsv_connectionString": {
+			"type": "secureString",
+			"metadata": "Secure string for 'connectionString' of 'LS_MultipleCsv'"
+		},
+		"LS_Output_BinaryText_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'LS_Output_BinaryText'"
+		},
+		"LS_Parquet_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'LS_Parquet'"
+		},
+		"LS_Rest_Parquet_accountKey": {
+			"type": "secureString",
+			"metadata": "Secure string for 'accountKey' of 'LS_Rest_Parquet'"
+		},
+		"LS_SqlServer_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'LS_SqlServer'"
+		},
+		"SqlServer1_password": {
+			"type": "secureString",
+			"metadata": "Secure string for 'password' of 'SqlServer1'"
+		},
+		"LS_ADLS_CSV_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://adlsdevdummy.dfs.core.windows.net/"
+		},
+		"LS_DATA_CSV_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://adlsdevdummy.dfs.core.windows.net/"
+		},
+		"LS_DATA_CSV1_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://adlsdevdummy.dfs.core.windows.net/"
+		},
+		"LS_GETMETADATA_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://adlsdevdummy.dfs.core.windows.net/"
+		},
+		"LS_Output_BinaryText_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://adlsdevdummy.dfs.core.windows.net/"
+		},
+		"LS_Parquet_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://adlsdevdummy.dfs.core.windows.net/"
+		},
+		"LS_Rest_Parquet_properties_typeProperties_url": {
+			"type": "string",
+			"defaultValue": "https://adlsdevdummy.dfs.core.windows.net/"
+		},
+		"LS_SqlServer_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "SRIDHAR\\SQLEXPRESS01"
+		},
+		"LS_SqlServer_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "sridhar0511"
+		},
+		"LS_SqlServer_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "SRIDHAR\\gudap"
+		},
+		"SqlServer1_properties_typeProperties_server": {
+			"type": "string",
+			"defaultValue": "SRIDHAR\\SQLEXPRESS01"
+		},
+		"SqlServer1_properties_typeProperties_database": {
+			"type": "string",
+			"defaultValue": "sridhar0511"
+		},
+		"SqlServer1_properties_typeProperties_userName": {
+			"type": "string",
+			"defaultValue": "SRIDHAR\\gudap"
+		},
+		"containerUri": {
+			"type": "string",
+			"metadata": "URI to storage account containing linked ARM templates"
+		},
+		"containerSasToken": {
+			"type": "string",
+			"metadata": "Sas token to storage account containing linked ARM templates"
+		}
+	},
+	"variables": {
+		"factoryId": "[concat('Microsoft.DataFactory/factories/', parameters('factoryName'))]"
+	},
+	"resources": [
+		{
+			"name": "ADFdevdummy_ArmTemplate_0",
+			"type": "Microsoft.Resources/deployments",
+			"apiVersion": "2024-03-01",
+			"properties": {
+				"mode": "incremental",
+				"templateLink": {
+					"uri": "[concat(parameters('containerUri'), '/ArmTemplate_0.json', parameters('containerSasToken'))]",
+					"contentVersion": "1.0.0.0"
+				},
+				"parameters": {
+					"factoryName": {
+						"value": "[parameters('factoryName')]"
+					},
+					"DeletedLogs_connectionString": {
+						"value": "[parameters('DeletedLogs_connectionString')]"
+					},
+					"LS_ADLS_CSV_accountKey": {
+						"value": "[parameters('LS_ADLS_CSV_accountKey')]"
+					},
+					"LS_BinaryText_connectionString": {
+						"value": "[parameters('LS_BinaryText_connectionString')]"
+					},
+					"LS_DATA_CSV_accountKey": {
+						"value": "[parameters('LS_DATA_CSV_accountKey')]"
+					},
+					"LS_DATA_CSV1_accountKey": {
+						"value": "[parameters('LS_DATA_CSV1_accountKey')]"
+					},
+					"LS_GETMETADATA_accountKey": {
+						"value": "[parameters('LS_GETMETADATA_accountKey')]"
+					},
+					"LS_MultipleCsv_connectionString": {
+						"value": "[parameters('LS_MultipleCsv_connectionString')]"
+					},
+					"LS_Output_BinaryText_accountKey": {
+						"value": "[parameters('LS_Output_BinaryText_accountKey')]"
+					},
+					"LS_Parquet_accountKey": {
+						"value": "[parameters('LS_Parquet_accountKey')]"
+					},
+					"LS_Rest_Parquet_accountKey": {
+						"value": "[parameters('LS_Rest_Parquet_accountKey')]"
+					},
+					"LS_SqlServer_password": {
+						"value": "[parameters('LS_SqlServer_password')]"
+					},
+					"SqlServer1_password": {
+						"value": "[parameters('SqlServer1_password')]"
+					},
+					"LS_ADLS_CSV_properties_typeProperties_url": {
+						"value": "[parameters('LS_ADLS_CSV_properties_typeProperties_url')]"
+					},
+					"LS_DATA_CSV_properties_typeProperties_url": {
+						"value": "[parameters('LS_DATA_CSV_properties_typeProperties_url')]"
+					},
+					"LS_DATA_CSV1_properties_typeProperties_url": {
+						"value": "[parameters('LS_DATA_CSV1_properties_typeProperties_url')]"
+					},
+					"LS_GETMETADATA_properties_typeProperties_url": {
+						"value": "[parameters('LS_GETMETADATA_properties_typeProperties_url')]"
+					},
+					"LS_Output_BinaryText_properties_typeProperties_url": {
+						"value": "[parameters('LS_Output_BinaryText_properties_typeProperties_url')]"
+					},
+					"LS_Parquet_properties_typeProperties_url": {
+						"value": "[parameters('LS_Parquet_properties_typeProperties_url')]"
+					},
+					"LS_Rest_Parquet_properties_typeProperties_url": {
+						"value": "[parameters('LS_Rest_Parquet_properties_typeProperties_url')]"
+					},
+					"LS_SqlServer_properties_typeProperties_server": {
+						"value": "[parameters('LS_SqlServer_properties_typeProperties_server')]"
+					},
+					"LS_SqlServer_properties_typeProperties_database": {
+						"value": "[parameters('LS_SqlServer_properties_typeProperties_database')]"
+					},
+					"LS_SqlServer_properties_typeProperties_userName": {
+						"value": "[parameters('LS_SqlServer_properties_typeProperties_userName')]"
+					},
+					"SqlServer1_properties_typeProperties_server": {
+						"value": "[parameters('SqlServer1_properties_typeProperties_server')]"
+					},
+					"SqlServer1_properties_typeProperties_database": {
+						"value": "[parameters('SqlServer1_properties_typeProperties_database')]"
+					},
+					"SqlServer1_properties_typeProperties_userName": {
+						"value": "[parameters('SqlServer1_properties_typeProperties_userName')]"
+					}
+				}
+			},
+			"dependsOn": []
+		},
+		{
+			"name": "ADFdevdummy_ArmTemplate_1",
+			"type": "Microsoft.Resources/deployments",
+			"apiVersion": "2024-03-01",
+			"properties": {
+				"mode": "incremental",
+				"templateLink": {
+					"uri": "[concat(parameters('containerUri'), '/ArmTemplate_1.json', parameters('containerSasToken'))]",
+					"contentVersion": "1.0.0.0"
+				},
+				"parameters": {
+					"factoryName": {
+						"value": "[parameters('factoryName')]"
+					}
+				}
+			},
+			"dependsOn": [
+				"[resourceId('Microsoft.Resources/deployments', 'ADFdevdummy_ArmTemplate_0')]"
+			]
+		}
+	]
+}

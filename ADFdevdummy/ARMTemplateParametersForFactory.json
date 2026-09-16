@@ -1,0 +1,84 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "ADFdevdummy"
+		},
+		"DeletedLogs_connectionString": {
+			"value": ""
+		},
+		"LS_ADLS_CSV_accountKey": {
+			"value": ""
+		},
+		"LS_BinaryText_connectionString": {
+			"value": ""
+		},
+		"LS_DATA_CSV_accountKey": {
+			"value": ""
+		},
+		"LS_DATA_CSV1_accountKey": {
+			"value": ""
+		},
+		"LS_GETMETADATA_accountKey": {
+			"value": ""
+		},
+		"LS_MultipleCsv_connectionString": {
+			"value": ""
+		},
+		"LS_Output_BinaryText_accountKey": {
+			"value": ""
+		},
+		"LS_Parquet_accountKey": {
+			"value": ""
+		},
+		"LS_Rest_Parquet_accountKey": {
+			"value": ""
+		},
+		"LS_SqlServer_password": {
+			"value": ""
+		},
+		"SqlServer1_password": {
+			"value": ""
+		},
+		"LS_ADLS_CSV_properties_typeProperties_url": {
+			"value": "https://adlsdevdummy.dfs.core.windows.net/"
+		},
+		"LS_DATA_CSV_properties_typeProperties_url": {
+			"value": "https://adlsdevdummy.dfs.core.windows.net/"
+		},
+		"LS_DATA_CSV1_properties_typeProperties_url": {
+			"value": "https://adlsdevdummy.dfs.core.windows.net/"
+		},
+		"LS_GETMETADATA_properties_typeProperties_url": {
+			"value": "https://adlsdevdummy.dfs.core.windows.net/"
+		},
+		"LS_Output_BinaryText_properties_typeProperties_url": {
+			"value": "https://adlsdevdummy.dfs.core.windows.net/"
+		},
+		"LS_Parquet_properties_typeProperties_url": {
+			"value": "https://adlsdevdummy.dfs.core.windows.net/"
+		},
+		"LS_Rest_Parquet_properties_typeProperties_url": {
+			"value": "https://adlsdevdummy.dfs.core.windows.net/"
+		},
+		"LS_SqlServer_properties_typeProperties_server": {
+			"value": "SRIDHAR\\SQLEXPRESS01"
+		},
+		"LS_SqlServer_properties_typeProperties_database": {
+			"value": "sridhar0511"
+		},
+		"LS_SqlServer_properties_typeProperties_userName": {
+			"value": "SRIDHAR\\gudap"
+		},
+		"SqlServer1_properties_typeProperties_server": {
+			"value": "SRIDHAR\\SQLEXPRESS01"
+		},
+		"SqlServer1_properties_typeProperties_database": {
+			"value": "sridhar0511"
+		},
+		"SqlServer1_properties_typeProperties_userName": {
+			"value": "SRIDHAR\\gudap"
+		}
+	}
+}
