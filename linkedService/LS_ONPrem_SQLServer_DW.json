@@ -1,0 +1,21 @@
+{
+	"name": "LS_ONPrem_SQLServer_DW",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"server": "SRIDHAR\\SQLEXPRESS01",
+			"database": "migrationproject",
+			"encrypt": "optional",
+			"trustServerCertificate": false,
+			"authenticationType": "Windows",
+			"userName": "SRIDHAR\\gudap",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJjNjExNTVhZC00Zjk4LTQyMWMtYTZjZi0xMzJiMWNmMzk0ZGQiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "SelfHostedIntegrationRuntime",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
