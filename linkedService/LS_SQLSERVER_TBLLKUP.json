@@ -1,0 +1,21 @@
+{
+	"name": "LS_SQLSERVER_TBLLKUP",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"annotations": [],
+		"type": "SqlServer",
+		"typeProperties": {
+			"server": "SRIDHAR\\SQLEXPRESS01",
+			"database": "MIGRATIONPROJECT",
+			"encrypt": "optional",
+			"trustServerCertificate": true,
+			"authenticationType": "Windows",
+			"userName": "SRIDHAR\\gudap",
+			"encryptedCredential": "eyJDcmVkZW50aWFsSWQiOiJlYTIyMzk1YS0xZjRiLTQxM2EtOGY3ZS1mZmEwMTZlYzZjN2EiLCJWZXJzaW9uIjoiMi4wIiwiQ2xhc3NUeXBlIjoiTWljcm9zb2Z0LkRhdGFQcm94eS5Db3JlLkludGVyU2VydmljZURhdGFDb250cmFjdC5DcmVkZW50aWFsU1UwNkNZMTQifQ=="
+		},
+		"connectVia": {
+			"referenceName": "SelfHostedIntegrationRuntime",
+			"type": "IntegrationRuntimeReference"
+		}
+	}
+}
