@@ -5,6 +5,9 @@
 		"factoryName": {
 			"value": "ADFdevdummy"
 		},
+		"ADLS_SQL_PARQUET_accountKey": {
+			"value": ""
+		},
 		"DeletedLogs_connectionString": {
 			"value": ""
 		},
@@ -23,7 +26,13 @@
 		"LS_GETMETADATA_accountKey": {
 			"value": ""
 		},
+		"LS_LKUP_MAX_VALUE_password": {
+			"value": ""
+		},
 		"LS_MultipleCsv_connectionString": {
+			"value": ""
+		},
+		"LS_ONPrem_SQLServer_DW_password": {
 			"value": ""
 		},
 		"LS_Output_BinaryText_accountKey": {
@@ -35,11 +44,17 @@
 		"LS_Rest_Parquet_accountKey": {
 			"value": ""
 		},
+		"LS_SQLSERVER_TBLLKUP_password": {
+			"value": ""
+		},
 		"LS_SqlServer_password": {
 			"value": ""
 		},
 		"SqlServer1_password": {
 			"value": ""
+		},
+		"ADLS_SQL_PARQUET_properties_typeProperties_url": {
+			"value": "https://adlsdevdummy.dfs.core.windows.net/"
 		},
 		"LS_ADLS_CSV_properties_typeProperties_url": {
 			"value": "https://adlsdevdummy.dfs.core.windows.net/"
@@ -53,6 +68,24 @@
 		"LS_GETMETADATA_properties_typeProperties_url": {
 			"value": "https://adlsdevdummy.dfs.core.windows.net/"
 		},
+		"LS_LKUP_MAX_VALUE_properties_typeProperties_server": {
+			"value": "SRIDHAR\\SQLEXPRESS01"
+		},
+		"LS_LKUP_MAX_VALUE_properties_typeProperties_database": {
+			"value": "MIGRATIONPROJECT"
+		},
+		"LS_LKUP_MAX_VALUE_properties_typeProperties_userName": {
+			"value": "SRIDHAR\\gudap"
+		},
+		"LS_ONPrem_SQLServer_DW_properties_typeProperties_server": {
+			"value": "SRIDHAR\\SQLEXPRESS01"
+		},
+		"LS_ONPrem_SQLServer_DW_properties_typeProperties_database": {
+			"value": "migrationproject"
+		},
+		"LS_ONPrem_SQLServer_DW_properties_typeProperties_userName": {
+			"value": "SRIDHAR\\gudap"
+		},
 		"LS_Output_BinaryText_properties_typeProperties_url": {
 			"value": "https://adlsdevdummy.dfs.core.windows.net/"
 		},
@@ -61,6 +94,15 @@
 		},
 		"LS_Rest_Parquet_properties_typeProperties_url": {
 			"value": "https://adlsdevdummy.dfs.core.windows.net/"
+		},
+		"LS_SQLSERVER_TBLLKUP_properties_typeProperties_server": {
+			"value": "SRIDHAR\\SQLEXPRESS01"
+		},
+		"LS_SQLSERVER_TBLLKUP_properties_typeProperties_database": {
+			"value": "MIGRATIONPROJECT"
+		},
+		"LS_SQLSERVER_TBLLKUP_properties_typeProperties_userName": {
+			"value": "SRIDHAR\\gudap"
 		},
 		"LS_SqlServer_properties_typeProperties_server": {
 			"value": "SRIDHAR\\SQLEXPRESS01"
