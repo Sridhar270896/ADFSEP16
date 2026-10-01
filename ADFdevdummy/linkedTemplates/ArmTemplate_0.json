@@ -561,24 +561,15 @@
 							"storedProcedureName": "[[dbo].[UpdateWatermark]",
 							"storedProcedureParameters": {
 								"TableName": {
-									"value": {
-										"value": "@pipeline().parameters.TableName",
-										"type": "Expression"
-									},
+									"value": "",
 									"type": "String"
 								},
 								"TableSchema": {
-									"value": {
-										"value": "@pipeline().parameters.TableSchema",
-										"type": "Expression"
-									},
+									"value": "",
 									"type": "String"
 								},
 								"WatermarkColumn": {
-									"value": {
-										"value": "@pipeline().parameters.WatermarkColumn",
-										"type": "Expression"
-									},
+									"value": "",
 									"type": "String"
 								}
 							}
@@ -594,16 +585,16 @@
 				},
 				"parameters": {
 					"TableSchema": {
-						"type": "string",
-						"defaultValue": "@pipeline().parameters.TableSchema"
+						"type": "string"
 					},
 					"TableName": {
-						"type": "string",
-						"defaultValue": "@pipeline().parameters.TableName"
+						"type": "string"
 					},
 					"WatermarkColumn": {
-						"type": "string",
-						"defaultValue": "@pipeline().parameters.WatermarkColumn"
+						"type": "string"
+					},
+					"LastLoadValue": {
+						"type": "string"
 					}
 				},
 				"annotations": []
@@ -618,7 +609,7 @@
 			"apiVersion": "2018-06-01",
 			"properties": {
 				"linkedServiceName": {
-					"referenceName": "LS_LKUP_MAX_VALUE",
+					"referenceName": "LS_ONPrem_SQLServer_DW",
 					"type": "LinkedServiceReference"
 				},
 				"parameters": {
@@ -644,7 +635,7 @@
 				}
 			},
 			"dependsOn": [
-				"[concat(variables('factoryId'), '/linkedServices/LS_LKUP_MAX_VALUE')]"
+				"[concat(variables('factoryId'), '/linkedServices/LS_ONPrem_SQLServer_DW')]"
 			]
 		}
 	]

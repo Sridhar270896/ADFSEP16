@@ -212,6 +212,10 @@
 											"WatermarkColumn": {
 												"value": "@pipeline().parameters.WatermarkColumn",
 												"type": "Expression"
+											},
+											"LastLoadValue": {
+												"value": "@pipeline().parameters.LastLoadValue",
+												"type": "Expression"
 											}
 										}
 									}
